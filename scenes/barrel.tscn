@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c65cw8m63e11s"]
+
+[ext_resource type="Texture2D" uid="uid://ixi0qwsh3pic" path="res://assets/img/obstacles/pipe.png" id="1_q36op"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q36op"]
+size = Vector2(90, 89)
+
+[node name="Barrel" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.19209e-07, -1.90735e-06)
+scale = Vector2(0.325, 0.3784)
+texture = ExtResource("1_q36op")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_q36op")

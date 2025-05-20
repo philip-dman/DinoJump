@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://btdxpemlmwebw"]
+
+[ext_resource type="Texture2D" uid="uid://6myjuwpchhto" path="res://assets/img/obstacles/galoomba.png" id="1_c6xkf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qs86r"]
+radius = 12.25
+
+[node name="Stump" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 1)
+scale = Vector2(0.386048, 0.386048)
+texture = ExtResource("1_c6xkf")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_qs86r")
